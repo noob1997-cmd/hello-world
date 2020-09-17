@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>剑灵官网</title>
+    <style>
+        .box{
+            width: 1015px;
+            height: 405px;
+            margin: 200px auto;/* 外边距 */
+        }
+        a{
+            float: left; /* 定义浮点，具有快元素特性 */
+            width: 125px;
+            height: 355px;
+            margin-right: 20px;
+            background-image: url(./img/wp-spr.png);
+        }
+        a:nth-child(odd){   /* 选择第几个a标签 奇数（odd） 偶数（even）*/
+            margin-top: 50px;
+            transform: rotate(2deg);  /* CSS变换：旋转 角度 */
+            animation: swing-odd 2s infinite alternate linear;  /* 播放动画 */
+        }
+        a:nth-child(even){
+            transform: rotate(-2deg);
+            animation: swing-even 2s infinite alternate linear;
+        }
+        @keyframes swing-odd{   /* 关键帧（画面） */
+            0%{  /* 开始画面 */
+                transform: rotate(2deg);
+            }
+            100%{  /* 结束画面 */
+                transform: rotate(-2deg);
+            }
+        }
+        @keyframes swing-even{
+            0%{
+                transform: rotate(-2deg);
+            }
+            100%{
+                transform: rotate(2deg);
+            }
+        }
+        a:nth-child(1){
+            background-position:-2px -189px;  /* 背景图片的位置 */
+        }
+        a:nth-child(2){
+            background-position:-147px -139px;  /* 背景图片的位置 */
+        }
+        a:nth-child(3){
+            background-position:-292px -189px;  /* 背景图片的位置 */
+        }
+        a:nth-child(4){
+            background-position:-437px -139px;  /* 背景图片的位置 */
+        }
+        a:nth-child(5){
+            background-position:-582px -189px;  /* 背景图片的位置 */
+        }
+        a:nth-child(6){
+            background-position:-727px -139px;  /* 背景图片的位置 */
+        }
+        a:nth-child(7){
+            background-position:-872px -189px;  /* 背景图片的位置 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="https://bns.qq.com/cp/a20200521dxxl/index.html"></a>
+        <a href="https://bns.qq.com/cp/a20200525ybwl/index.html"></a>
+        <a href="https://act.daoju.qq.com/act/a20200603flsd/index.htm"></a>
+        <a href="https://bns.qq.com/cp/a20200612sunshine/index.htm"></a>
+        <a href="https://bns.qq.com/act/a20200615scyd/index.html"></a>
+        <a href="https://bns.qq.com/cp/a20200605hmsq/index.html"></a>
+        <a href="https://bns.qq.com/cp/a20200529lighting/index.htm"></a>
+    </div>
+</body>
+</html>
